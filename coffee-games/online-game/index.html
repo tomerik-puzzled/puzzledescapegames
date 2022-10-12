@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Game Page</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Metrophobic">
+    <link rel="stylesheet" href="assets/fonts/lp132font/stylesheet.css">
+     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+
+     
+    <!--LOCAL LINKING
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="stylesheet" href="assets/style.css">-->
+<!--    <link rel="stylesheet" media="all and (orientation:portrait)" href="assets/portrait.css">   -->
+<link rel="stylesheet" media="all" href="stylesheet.css">
+
+    <script src="..assets/main.js"></script>
+    <script src="/assets/main.js"></script>
+    <script src="assets/main.js"></script>
+
+</head>
+
+
+<body>
+
+<div class="header">
+<h1 style="">I NEED YOUR HELP!<span></h1> 
+
+</div>
+
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/492216339?h=0bc9db4d43&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Video 1.mp4"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+<p>Input the one-word answer in the text box below: </p>
+
+
+
+<style>
+.button {
+  border: single;
+  color: black;
+  background-color: pink;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  }
+  
+  .input{
+   border: single;
+  color: black;
+  cursor: pointer;
+  }
+  
+</style>
+
+
+
+<input id="myInput" class="input">
+<button id="myBtn" class="button" onclick="myFunction()">SUBMIT YOUR ANSWER</button>
+
+<p id="demo"></p>
+
+<script>
+var input = document.getElementById("myInput");
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   document.getElementById("myBtn").click();
+  }
+});
+
+function myFunction() {
+  var ladyresponse;
+  var answer =  document.getElementById('myInput').value;
+     if (answer == 'neapolitan' || answer == 'Neapolitan' || answer == 'Neopolitan' || answer == 'neopolitan' || answer == 'Neopolitan' || answer == 'neapolitan ' || answer == 'Neapolitan ' || answer == 'Neapolitan ice cream' || answer == 'neapolitan ice cream') 
+     
+      {ladyresponse = "CHECKING YOUR ANSWER...";
+      window.open('https://puzzledescapegames.com/ccto');
+
+
+  
+  } else {
+  
+  ladyresponse = "No, that's not the common thing between the four answers. Maybe the folks at Puzzled did mean Chumps";
+  }
+  //THIS IS WHAT IT CHANGES
+
+  document.getElementById("demo").innerHTML = ladyresponse;
+}
+
+
+</script>
+
+
+
+
+       
+</body>
+
+</html>
+
+
+
+

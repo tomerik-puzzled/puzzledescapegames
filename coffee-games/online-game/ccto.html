@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CC TO</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Metrophobic">
+    <link rel="stylesheet" href="assets/fonts/lp132font/stylesheet.css">
+     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+
+     
+    <!--LOCAL LINKING
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="stylesheet" href="assets/style.css">-->
+<!--    <link rel="stylesheet" media="all and (orientation:portrait)" href="assets/portrait.css">   -->
+<link rel="stylesheet" media="all" href="stylesheet.css">
+
+    <script src="..assets/main.js"></script>
+    <script src="/assets/main.js"></script>
+    <script src="assets/main.js"></script>
+
+</head>
+
+
+<body>
+
+<div class="header">
+<h1 style="">CC TO<span></h1> 
+
+</div>
+
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/492225654?h=8150d48e0a&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Video 2"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+
+
+
+
+
+<style>
+.button {
+  border: single;
+  color: black;
+  background-color: pink;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.input {
+  border: single;
+  color: black;
+  cursor: pointer;
+}
+</style>
+
+
+
+First name of the truck driver: <input id="myInput1" class="input"><br>
+4-digit truck number: <input id="myInput2" class="input"><br>
+Name of the bay: <input id="myInput3" class="input"><br>
+
+<button id="myBtn" class="button" onclick="myFunction()">CHECK THE ANSWERS</button>
+
+<p id="demo"></p>
+
+<script>
+//var input = document.getElementById("myInput");
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   document.getElementById("myBtn").click();
+  }
+});
+
+function myFunction() {
+  var ladyresponse;
+  var answer1 =  document.getElementById('myInput1').value;
+  var answer2 =  document.getElementById('myInput2').value;
+  var answer3 =  document.getElementById('myInput3').value;
+
+  
+     if ((answer1 == 'donovan' || 
+          answer1 == 'DONOVAN' || 
+          answer1 == 'Donovan' || 
+          answer1 == 'donovan ' || 
+          answer1 == 'DONOVAN ' || 
+          answer1 == 'Donovan ') && 
+      (answer2 == '4001') && 
+        (answer3 == 'hudson'|| 
+         answer3 == 'HUDSON' || 
+         answer3 == 'Hudson' || 
+         answer3 == 'NO-BRAVO' || 
+         answer3 == 'no-bravo' || 
+         answer3 == 'no-BRAVO' || 
+         answer3 == 'NO-Bravo' )) 
+     
+      {ladyresponse = "CHECKING TO SEE IF THAT IS CORRECT...";
+      window.open('https://puzzledescapegames.com/cctre');
+
+
+  
+  } else {
+  
+  ladyresponse = "No, that does not seem right. Did you cheat solving the coffee cups? I was under the impression you were amazing detectives.";
+  }
+  //THIS IS WHAT IT CHANGES
+
+  document.getElementById("demo").innerHTML = ladyresponse;
+}
+
+
+</script>
+
+
+
+<div>
+  
+<img src="assets/fleet-overview.jpg" class="imageDisplay"/>
+<img src="assets/our-staff.png" class="imageDisplay"/>
+<img src="assets/floor-plan.jpg" class="imageDisplay"/>
+<img src="assets/exit-log.jpg" class="imageDisplay"/>
+<img src="assets/cleaners-statement.jpg" class="imageDisplay"/>
+
+
+</div>
+
+
+
+<a href="assets/illu2.pdf" download="proposed_file_name">Download</a>
+
+       
+</body>
+
+</html>
+
+
+
+
