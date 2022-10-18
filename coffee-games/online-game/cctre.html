@@ -40,8 +40,101 @@
 
 
 
+<style>
+.button {
+  border: single;
+  color: black;
+  background-color: pink;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.input {
+  border: single;
+  color: black;
+  cursor: pointer;
+}
+</style>
 
 
+
+
+<p>Purchase sum: <input id="myInput1" class="input" type="number"><br>
+Venue: <input id="myInput2" class="input" type="text"><br>
+Meeting time: <input id="myInput3" class="input" type="text"><br>
+</p>
+<button id="myBtn" class="button" onclick="myFunction()">SEND ME YOUR ANSWERS</button>
+
+<p id="demo"></p>
+
+<script>
+//var input = document.getElementById("myInput");
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   document.getElementById("myBtn").click();
+  }
+});
+
+function myFunction() {
+  var ladyresponse;
+  var moneysum =  document.getElementById('myInput1').value;
+  var location =  document.getElementById('myInput2').value;
+  var time =  document.getElementById('myInput3').value;
+
+  
+     if ((moneysum == '168048') && 
+        (location == 'columbus park' || 
+        location == 'Columbus Park' || 
+        location == 'Columbus park' || 
+        location == 'COLUMBUS PARK' ||
+        location == 'Columbus' || 
+        location == 'COLUMBUS' ||
+        location == 'columbus' || 
+        location == 'columbus Park') && 
+        (time == '16:30' || 
+        time == '16.30' || 
+        time == '1630' ||
+        time == '430pm' ||
+         time == '4:30' || 
+        time == '4.30' || 
+        time == '430' ||
+        time == '430PM' ||
+         time == '4:30PM' || 
+        time == '4.30PM' || 
+         time == '4:30pm' || 
+        time == '4.30pm' || 
+        time == '430pm'
+        )) 
+        
+       
+     
+      {ladyresponse = "CHECKING TO SEE IF THAT IS CORRECT...";
+      window.open('ccfire.html');
+
+
+  
+  } else {
+  
+  ladyresponse = "No, that cannot be correct. Try again, please.";
+  }
+  //THIS IS WHAT IT CHANGES
+
+  document.getElementById("demo").innerHTML = ladyresponse;
+}
+
+
+</script>
+
+
+
+
+<div id="eojiImage"><img src="assets/txtmsg-sm.png" id="emoImage"></div>
 
        
 </body>

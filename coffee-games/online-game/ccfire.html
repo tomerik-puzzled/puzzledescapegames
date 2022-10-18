@@ -41,6 +41,73 @@
 
 
 
+<style>
+.button {
+  border: single;
+  color: black;
+  background-color: pink;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.input {
+  border: single;
+  color: black;
+  cursor: pointer;
+}
+</style>
+
+
+
+WHERE HAS THE COFFEE BEEN SENT?  <input id="myInput1" class="input" type="text"><br>
+
+
+<button id="myBtn" class="button" onclick="myFunction()">SUBMIT YOUR ANSWER</button>
+
+<p id="demo"></p>
+
+<script>
+//var input = document.getElementById("myInput");
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   document.getElementById("myBtn").click();
+  }
+});
+
+function myFunction() {
+  var ladyresponse;
+  var finallocation =  document.getElementById('myInput1').value;
+  
+
+  
+     if (finallocation == 'Easthampton' || finallocation == 'EASTHAMPTON' || finallocation == 'easthampton')
+    
+     
+      {ladyresponse = "CHECKING TO SEE IF THAT IS CORRECT...";
+      window.open('ccfem.html');
+
+
+  
+  } else {
+  
+  ladyresponse = "That does't sound right.";
+  }
+  //THIS IS WHAT IT CHANGES
+
+  document.getElementById("demo").innerHTML = ladyresponse;
+}
+
+
+</script>
+
+
+
 
 
        

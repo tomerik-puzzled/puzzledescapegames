@@ -115,4 +115,16 @@ footer {width: 100vw; height: 30vh; background-color: rgb(184, 235, 200);}
 }
 
 
+#emojiImage {
+  width: 50vw; min-height: 20vh;
+  background-color: red;
+  position: relative;
+  left: 25%;
+  right: 25%;
+  bottom: 0px;
+  background-image: url('assets/txtmsg-sm.png');
+  background-repeat: no-repeat;
+  background-size: cover;}
 
+
+  .hintImages {max-width: 100px}

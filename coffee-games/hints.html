@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HINTS</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Metrophobic">
+    <link rel="stylesheet" href="assets/fonts/lp132font/stylesheet.css">
+     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+
+     
+    <!--LOCAL LINKING
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="stylesheet" href="assets/style.css">-->
+<!--    <link rel="stylesheet" media="all and (orientation:portrait)" href="assets/portrait.css">   -->
+<link rel="stylesheet" media="all" href="style.css">
+
+    <script src="..assets/main.js"></script>
+    <script src="/assets/main.js"></script>
+    <script src="assets/main.js"></script>
+
+</head>
+
+
+<body>
+
+<div class="header">
+<h1 style="">HINTS & SOLUTIONS<span></h1> 
+<h3 style="">FOR COFFEE CUP GAME</h2>
+<hr>
+</div>
+
+
+<div id="coffeeOne">
+<h2>COFFEE CUP ONE</h2>
+<img src="images/coffeecup-2.png" class="hintImages">
+
+<style>
+.collapsible1 {
+  background-color: rgba(255,255,255,0.0);
+  color: grey;
+  cursor: pointer;
+  margin: 6px;
+  padding: 18px;
+  width: 100%;
+  border: solid;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active1, .collapsible1:hover {
+  background-color: rgba(255,0,255,0.5);
+}
+
+.content1 {
+  background-color: rgba(255,255,255,0.0);
+  color: yellow;
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  
+}
+</style>
+
+
+
+<button type="button" class="collapsible1">HINTS AND SOLUTIONS FOR CUP ONE</button>
+<div class="content1">
+  <p>This cup relies on deduction to solve it. 
+
+First big trick in solving it is taking a notepad and making seven columns (slots). One for each berry.<br><br>
+
+For simplicity, we’ll refer to poisonous berries as P, bland berry as B, Delicious Berries as D, and Healing Berry as H.
+<br>Then you need to start getting some specific placements down. <br>There are a few different ways to go about it, but the one described below is probably the easiest. If you want more help, click on the various buttons below.
+</p>
+
+<button type="button" class="collapsible1">"Ones at either side will not heal you my friend..." &amp; "The bland berry..."</button>
+<div class="content1">
+  <p>Using the two phrases “ones at either side will not heal you, my friend, and one will force your life to an early end“ and “the bland berry may hide in plain sight, but it is to the last berry’s right. That will tell you that a P will either be in slot 1 or 7, but because the last P will have the berry to its right, it cannot be slot 7, and therefore, you know slot 1 is a poisonous berry.</p>
+</div>
+
+<button type="button" class="collapsible1">"No berry of malign..."</button>
+<div class="content1">
+  <p>The next phrase to use is “No berry of malign is next to its vicious kind“. Meaning no poisonous berry is next to another poisonous berry.<br><br>
+
+With that foreknowledge we can start gaming out three scenarios where we place Ps with at least one slot between them. <br><br>
+
+SCENARIO A (P in slots 1, 3, and 5):<br>
+
+P- ? - P - ? - P - possibly B - possibly B, but certainly not H.<br><br>
+
+SCENARIO B (P in slots 1, 3, and 6):<br>
+P- ? - P - ? - ? - P - B<br><br>
+
+SCENARIO C (P in slots 1, 4 and 6):<br>
+P- ? - ? - P - ? - P - B<br>
+</p>
+</div>
+<button type="button" class="collapsible1">"No delicious berry"</button>
+<div class="content1">
+  <p>
+Next phrase you should use is: “No delicious berry find on both its flanks someone from the poisonous ranks. Meaning a D can not have P on both its sides. <br><br>
+
+In scenario A above, the Ds could only fit on slot 6 and 7 without having poison on both its flank, but we know from the combination of the two earlier discussed phrases that B has to be in either slot 6 or 7. So there’s not room for both Ds in scenario A. Keeping scenario B and C and placing Ds without P’s on both its flanks gives:<br><br>
+
+SCENARIO B<br>
+P-?-P-D-D-P-B<br><br>
+
+SCENARIO C<br>
+P- D- D - P - ? - P - B<br><br>
+</p>
+</div>
+
+<button type="button" class="collapsible1">"The one of us you wish to find"</button>
+<div class="content1">
+  <p>
+Now is the time to use the phrase “the one of us you wish to find loathes the fifth berry in line.“ If you are to assume, correctly, that H does not hate oneself, H cannot be in slot 5. Therefore, Scenario C is out of the question. Leaving Scenario B, where H would have to be in slot 2. Looking at the berries in line on the coffee cup, the berry that occupies the 2nd slot is “Strawberry”.<br><br>
+
+The answer to coffee cup one is “STRAWBERRY“<br>
+
+</p>
+</div>
+
+
+</div>
+
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible1");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active1");
+    var content1 = this.nextElementSibling;
+    if (content1.style.display === "block") {
+      content1.style.display = "none";
+    } else {
+      content1.style.display = "block";
+    }
+  });
+}
+</script>
+
+
+</div>
+
+
+       
+</body>
+
+</html>
+
+
+
+
