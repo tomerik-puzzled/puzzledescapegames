@@ -71,12 +71,10 @@ button:hover {
 
 
 
-table {}
-
-
+table {border: solid 0px red; width: 90vw}
 
 td { 
-    border: solid blue 0px; 
+    border: solid blue 0px; width: 26vw;
   }
 
 

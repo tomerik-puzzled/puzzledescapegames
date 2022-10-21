@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="assets/style.css">-->
 <!--    <link rel="stylesheet" media="all and (orientation:portrait)" href="assets/portrait.css">   -->
 <link rel="stylesheet" media="all" href="style.css">
+<link rel="stylesheet" media="all" href="style-hints.css">
 
     <script src="..assets/main.js"></script>
     <script src="/assets/main.js"></script>
@@ -38,42 +39,20 @@
 </div>
 
 
-<div id="coffeeOne">
+
+
+<div id="coffeeOne" class="coffees">
 <h2>COFFEE CUP ONE</h2>
-<img src="images/coffeecup-2.png" class="hintImages">
+<img src="images/coffeecup-1.png" class="hintImages">
 
 <style>
-.collapsible1 {
-  background-color: rgba(255,255,255,0.0);
-  color: grey;
-  cursor: pointer;
-  margin: 6px;
-  padding: 18px;
-  width: 100%;
-  border: solid;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-}
 
-.active1, .collapsible1:hover {
-  background-color: rgba(255,0,255,0.5);
-}
-
-.content1 {
-  background-color: rgba(255,255,255,0.0);
-  color: yellow;
-  padding: 0 18px;
-  display: none;
-  overflow: hidden;
-  
-}
 </style>
 
 
 
-<button type="button" class="collapsible1">HINTS AND SOLUTIONS FOR CUP ONE</button>
-<div class="content1">
+<button type="button" class="collapsible1 sharedAttributes">HINTS AND SOLUTIONS FOR CUP ONE</button>
+<div class="content1 sharedContent">
   <p>This cup relies on deduction to solve it. 
 
 First big trick in solving it is taking a notepad and making seven columns (slots). One for each berry.<br><br>
@@ -82,13 +61,13 @@ For simplicity, we’ll refer to poisonous berries as P, bland berry as B, Delic
 <br>Then you need to start getting some specific placements down. <br>There are a few different ways to go about it, but the one described below is probably the easiest. If you want more help, click on the various buttons below.
 </p>
 
-<button type="button" class="collapsible1">"Ones at either side will not heal you my friend..." &amp; "The bland berry..."</button>
-<div class="content1">
+<button type="button" class="collapsible1 sharedAttributes">"Ones at either side will not heal you my friend..." &amp; "The bland berry..."</button>
+<div class="content1 sharedContent">
   <p>Using the two phrases “ones at either side will not heal you, my friend, and one will force your life to an early end“ and “the bland berry may hide in plain sight, but it is to the last berry’s right. That will tell you that a P will either be in slot 1 or 7, but because the last P will have the berry to its right, it cannot be slot 7, and therefore, you know slot 1 is a poisonous berry.</p>
 </div>
 
-<button type="button" class="collapsible1">"No berry of malign..."</button>
-<div class="content1">
+<button type="button" class="collapsible1 sharedAttributes">"No berry of malign..."</button>
+<div class="content1 sharedContent">
   <p>The next phrase to use is “No berry of malign is next to its vicious kind“. Meaning no poisonous berry is next to another poisonous berry.<br><br>
 
 With that foreknowledge we can start gaming out three scenarios where we place Ps with at least one slot between them. <br><br>
@@ -104,8 +83,8 @@ SCENARIO C (P in slots 1, 4 and 6):<br>
 P- ? - ? - P - ? - P - B<br>
 </p>
 </div>
-<button type="button" class="collapsible1">"No delicious berry"</button>
-<div class="content1">
+<button type="button" class="collapsible1 sharedAttributes">"No delicious berry"</button>
+<div class="content1 sharedContent">
   <p>
 Next phrase you should use is: “No delicious berry find on both its flanks someone from the poisonous ranks. Meaning a D can not have P on both its sides. <br><br>
 
@@ -119,8 +98,8 @@ P- D- D - P - ? - P - B<br><br>
 </p>
 </div>
 
-<button type="button" class="collapsible1">"The one of us you wish to find"</button>
-<div class="content1">
+<button type="button" class="collapsible1 sharedAttributes">"The one of us you wish to find"</button>
+<div class="content1 sharedContent">
   <p>
 Now is the time to use the phrase “the one of us you wish to find loathes the fifth berry in line.“ If you are to assume, correctly, that H does not hate oneself, H cannot be in slot 5. Therefore, Scenario C is out of the question. Leaving Scenario B, where H would have to be in slot 2. Looking at the berries in line on the coffee cup, the berry that occupies the 2nd slot is “Strawberry”.<br><br>
 
@@ -155,7 +134,784 @@ for (i = 0; i < coll.length; i++) {
 </div>
 
 
+
+
+
+
+
+
+
+
+
+
+<div id="coffeeTWO" class="coffees">
+<h2>COFFEE CUP TWO</h2>
+<img src="images/coffeecup-2.png" class="hintImages">
+
+
+
+
+
+<button type="button" class="collapsible2 sharedAttributes">HINTS AND SOLUTIONS FOR CUP TWO</button>
+<div class="content2 sharedContent">
+  <p>This cup has three components that need to be solved in order to find the one-word answer. <br>
+
+If you are torn about some of the answers to the riddles, the windows will indicate how many words each riddle answer should be. <br><br>
+</p>
+
+
+
+<button type="button" class="collapsible2 sharedAttributes">Riddle 1</button>
+<div class="content2 sharedContent">
+  <p>I’m juicy, pulpy and even a colour.<br><br>
+
+Think a liquid that you drink.<br><br>
+
+Yes, orange juice. It is a colour, a fruit and pulpy. The answer is: orange</p>
+</div>
+
+<button type="button" class="collapsible2 sharedAttributes">Riddle 2</button>
+<div class="content2 sharedContent">
+  <p>You may need to dig two of something, even if plan on serving me cold. This one combines two bad-ass saying about the same concept and word.<br><br>
+
+Seek revenge and you should dig two graves, one for yourself.<br><br>
+
+The other saying is revenge is a dish best served cold. <br><br>
+
+The thing that is being served cold and requires two graves is:<br><br>
+
+Revenge. <br><br>
+</p>
+</div>
+
+
+<button type="button" class="collapsible2 sharedAttributes">Riddle 3</button>
+<div class="content2 sharedContent">
+  <p>
+"Some say I am a type of time. Some say I belong to the Nordic god of Thunder." <br><br>This mashes 80’s pop culture and the trusted belonging of the Nordic God Thor. <br><br>Hammer time and Thor’s hammer. <br><br>The answer is hammer
+</p>
+</div>
+
+
+
+<button type="button" class="collapsible2 sharedAttributes">Riddle 4</button>
+<div class="content2 sharedContent">
+  <p>
+I’m not your uncle, sister or wacky aunt, but some say I am a relative and a father.<br><br>
+
+The uncle, sister or wacky aunt is a misdirect. What can be described as relative and a father? The same is also described as a flat circle, linear (contrarily to flat circle) and a certainty of the human condition. The answer is: Time.<br><br>
+
+Time is relative<br><br>
+
+Father time<br>
+
+</p>
+</div>
+
+
+
+<button type="button" class="collapsible2 sharedAttributes">Riddle 5</button>
+<div class="content2 sharedContent">
+  <p>
+"You’ll find me on walls, toes and coffins too."<br><br>
+
+The final … in the coffin...<br><br>
+
+The ….s on the toes and fingers.<br><br>
+
+The answer is: Nail<br>
+
+</p>
+</div>
+
+
+<button type="button" class="collapsible2 sharedAttributes">Riddle 6</button>
+<div class="content2 sharedContent">
+  <p>
+I don’t take to the sun well, but I’m a carnie’s home and I am a always just. 
+
+Carnie’s “home” is the fair. 
+
+If you’re fair skinned you do not take to the sun so well. 
+
+Another word for just is fair. 
+
+The answer is fair.<br>
+
+</p>
+</div>
+
+
+<button type="button" class="collapsible2 sharedAttributes">Riddle 7</button>
+<div class="content2 sharedContent">
+  <p>
+Most use me in their career, and to screw in a light bulb in the ceiling.<br><br> 
+
+A thing you climb, literally.<br><br>
+A thing you climb, metaphorically, in your career.<br><br>
+
+The answer is ladder.<br>
+
+</p>
+</div>
+
+
+<button type="button" class="collapsible2 sharedAttributes">I have all the answers to the riddles, now what?</button>
+<div class="content2 sharedContent">
+  <p>
+You need one letter from each answer, and it is not the first letter.<br> 
+
+Look at the buildings for an indicator. <br><br>
+
+Still don’t know?<br><br>
+
+Each building has a set amount of windows.<br><br> 
+
+The answer to each riddle has the same amount of letters as windows below it. Each lit window represents the letter you need from the answer. So as an example. The second building from the right. 
+<br><br>
+The answer is fair. 
+<br><br>
+There are two lit windows. 
+<br><br>
+Meaning you need the second letter in the word FAIR, which is A.
+<br>
+</p>
+</div>
+
+
+<button type="button" class="collapsible2 sharedAttributes">I have all the answers and the letters I need. Do I just use a word scrambler?</button>
+<div class="content2 sharedContent">
+  <p>
+I suppose you could, but each billboard has a power line going to the signage below. They indicate where the seven letters from the seven riddles go.<br><br> 
+
+So using second from the right again, tracing the power line to the final spot on the signage below will tell you A goes in the last spot. 
+<br><br>
+The final answer to cup 2 is:
+
+Vanilla. 
+<br>
+
+
+
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div id="coffeeTHREE" class="coffees">
+<h2>COFFEE CUP THREE</h2>
+<img src="images/coffeecup-3.png" class="hintImages">
+
+
+<button type="button" class="collapsible3 sharedAttributes">HINTS AND SOLUTIONS FOR CUP THREE</button>
+<div class="content3 sharedContent">
+  <p>
+  Coffee cup three is a chart the path kind of puzzle.<br><br> 
+
+By figuring out the conductors exact path and stops she makes, you will have an order of stations.  That path is:<br><br>
+
+Heading west to “Cold Mountain stn”<br>
+
+Thru the tunnel, skipping the next two stations, but stopping at “Horse station“.<br>
+
+Next to “Old station“.<br>
+
+Thru the tunnel without stopping until “Cold Mountain station”.<br>
+
+Then yet again skipping the next two stations, and skipping Horse Station and stopping for tea at “Old station“. <br>
+
+Then diverting to “Love station“, then coming back on the track finally stopping at “Atom station“ and “Tree station“ and coming thru the tunnel the other way to “Echo station“.<br><br>
+
+The stops are then:<br><br>
+
+Cold Mountain<br>
+Horse Station<br>
+Old Station<br>
+Cold Mountain<br>
+Old Station<br>
+Love Station<br>
+Atom Station<br>
+Tree Station<br>
+Echo Station<br><br>
+
+Look at the first letter of each of them. It spells CHOCOLATE.<br><br> 
+
+The answer to cup three is: “Chocolate“.
+
+  </p>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div id="coffeeFOUR" class="coffees">
+<h2>COFFEE CUP FOUR</h2>
+<img src="images/coffeecup-4.png" class="hintImages">
+
+
+
+<button type="button" class="collapsible4 sharedAttributes">HINTS AND SOLUTIONS FOR CUP FOUR</button>
+<div class="content4 sharedContent">
+  <p>
+  The solution to coffee cup four is a two-word answer. Most of the items on the bottom phonetically makes a letter. The ones that do not provide you the letter in more direct ways.<br><br>
+
+They items and letters are:<br><br>
+
+The newspaper has an “eye“ on it, which is the letter “I“.<br><br>
+
+The sign post has the periodic table on it. One square is highlighted, but it is missing its element name and letter. If you look up the missing square it is “C” for carbon.<br><br>
+
+The TV has a bee on it minus BE. Which gives you “E“.<br><br>
+
+The binocular is looking at a “sea“, which makes it the letter “C”.<br><br>
+
+The pirate has a speech bubble above it. Which reads "*affirmation. A pirate affirms by saying “arrrr“, which phonetically is an “R“.<br><br>
+
+Next item is the TV again. The TV has a bee on it minus BE. Which gives you “E“.<br><br>
+
+The final item is the film projector. The projector has a rebus equation. The solution is: MAN + GO + JAM - MANGO - J = AM. <br><br>
+
+Now that all the answers are in place, the answer spells out: ICE CREAM. <br><br>
+
+Ice cream is the answer to cup four. <br>
+
+  </p>
+</div>
+</div>
+
+
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible2");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active2");
+    var content2 = this.nextElementSibling;
+    if (content2.style.display === "block") {
+      content2.style.display = "none";
+    } else {
+      content2.style.display = "block";
+    }
+  });
+}
+</script>
+
+<script>
+var coll = document.getElementsByClassName("collapsible3");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active3");
+    var content3 = this.nextElementSibling;
+    if (content3.style.display === "block") {
+      content3.style.display = "none";
+    } else {
+      content3.style.display = "block";
+    }
+  });
+}
+</script>
+
+<script>
+var coll = document.getElementsByClassName("collapsible4");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active4");
+    var content4 = this.nextElementSibling;
+    if (content4.style.display === "block") {
+      content4.style.display = "none";
+    } else {
+      content4.style.display = "block";
+    }
+  });
+}
+</script>
+
+
+<!--start-->
+<div id="onlinePuzzles">
+
+
+
+<div id="metaAnswer" class="onlinePuzzles">
+<h2>THE META ANSWER</h2>
+
+<button type="button" class="collapsiblemeta onlinePuzzlesCollapsibles">REVEAL THE SOLUTION</button>
+<div class="contentmeta  sharedContent">
+  <p>
+  If you have solved all the cups, the next step is to think what the four answers have in common. Sure they are all edible products. But more importantly, what is famously chocolate, vanilla and strawberry ice cream?<br><br>
+
+The answer is “Neapolitan”.<br><br>
+
+And if you did not know that, it would not be cheating to Google that.<br><br>
+
+By inputting the answer in the text box, you will be sent to the next video and the first online puzzle.
+
+  </p>
+</div>
+
+
+<script>
+var coll = document.getElementsByClassName("collapsiblemeta");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("activemeta");
+    var contentmeta = this.nextElementSibling;
+    if (contentmeta.style.display === "block") {
+      contentmeta.style.display = "none";
+    } else {
+      contentmeta.style.display = "block";
+    }
+  });
+}
+</script>
+
+
+
+
+
+
+
+<div id="warehouse">
+<h2>FIRST ONLINE PUZZLE</h2>
+
+
+<button type="button" class="collapsibleon1 onlinePuzzlesCollapsibles">HINTS AND SOLUTION FOR FIRST ONLINE PUZZLE</button>
+<div class="contenton1">
+  <p>This one is a doozy! It’s probably the hardest puzzle of them all and has taken people 40-100 minutes to solve.
+The first big recommendation is to print the papers. It will make solving it and having a good overview that much easier.
+That out of the way, let's get to it.<br><br>
+There are different starting approaches, this just one of them:<br>
+</p>
+
+
+
+<button type="button" class="collapsibleon1 onlinePuzzlesCollapsibles">STEP ONE</button>
+<div class="contenton1">
+  <p>Using the exit log you will fill in which drivers were in which vehicle numbers. You may not get a definitive driver for an exit, but getting certainties that a group of drivers handled a specific batch of exits will get you closer to filling it in</p>
+<p>By the cleaners description Pernille exited in an NLD. Cross referencing the exit log, that can only be vehicle 1001. Checking the fleet list, that tells you there are only two NLDs unaccounted for then. Only three more drivers (Stig, Kirsten and Tyrone) are eligible to drive NLDS.<br><br> Stig and Kirsten are only licensed to drive NLDs and nothing else. Therefore, Stig and Kirsten drove the last two NLDs. We don’t which one drove 1002 or 1003, but one of them drove one of them, and the other drove the other. Write Stig/Kirsten next to one, and then Kirsten/Stig next to the other.</p>
+</div>
+
+
+
+
+
+<button type="button" class="collapsibleon1 onlinePuzzlesCollapsibles">STEP TWO</button>
+<div class="contenton1">
+  <p>
+10:44pm the cleaner saw Jeffries close a Wee truck and drive off. The only wee truck that correlates with that is vehicle 2004. Check that off the exit log with Jeffrie’s name next to it.
+
+</p>
+</div>
+
+
+
+<button type="button" class="collapsibleon1 onlinePuzzlesCollapsibles">STEP THREE</button>
+<div class="contenton1">
+  <p>
+The driver Tyler Rennes is only licensed to drive Vaulens. There is only one Vaulen in the fleet. That means you can dedicate Tyler to 5001.
+</p>
+</div>
+
+
+
+
+
+<button type="button" class="collapsibleon1 onlinePuzzlesCollapsibles">STEP FOUR</button>
+<div class="contenton1">
+  <p>
+There are four carriage trucks, but carriage trucks are not compatible with the bay in Central hall, so you can safely say that Tyrone and Barbara did not drive carriage trucks. Looking at the driver list, there are only four drivers that are not accounted for, that can drive Carriages. They are: Lukas Johansson, Lukas Ramirez, Ricky Santiago and Monique Chantelle. <br>Put those names next to all the 3000 exits. 
+
+</p>
+</div>
+
+
+
+<button type="button" class="collapsibleon1 onlinePuzzlesCollapsibles">STEP FIVE</button>
+<div class="contenton1">
+  <p>
+In the window of 10:59pm to 11:10pm the cleaner worked in  Central hall, and witnessed Barbara Lee and Tyrone leave the hall while he was there. The central hall only has a bay for bravo compatible trucks, which are NLDs, WEEs and SLYFLYS. All the NLDs are accounted for so you can ignore that. <br>This means that Barbara and Tyrone with certainty drove either vehicle nrs: 4001, 2001 or 2003.
+
+
+
+</p>
+</div>
+
+
+<button type="button" class="collapsibleon1 onlinePuzzlesCollapsibles">STEP SIX</button>
+<div class="contenton1">
+  <p>
+So we have now  2002 and 4002 that are not accounted for at all. The only drivers that have not been linked with any vehicle numbers so far, are: Donovan, Estan Istanovic and John Bradley. John Bradley is only licensed to drive WEEs (vehicle numbers that start with 2000) so 2002 is his.
+This also correlates with the cleaners description that she heard dogs barking in South hall. John Bradley’s ringtone is “Who let the dogs out“.
+
+</p>
+</div>
+
+
+<button type="button" class="collapsibleon1 onlinePuzzlesCollapsibles">STEP SEVEN</button>
+<div class="contenton1">
+  <p>
+4001, 2001, 2003 and 4002 are then all linked to either Tyrone, Barbara, Donovan and Estan. Donovan and Estan do not drive WEEs, so that means with certainty that Tyrone and Barbara drove 2001 and 2003. Barbara left before Tyrone, so write Barbara next to 2001 and Tyrone next to 2003.
+
+</p>
+</div>
+
+
+<button type="button" class="collapsibleon1 onlinePuzzlesCollapsibles">STEP 8</button>
+<div class="contenton1">
+  <p>
+Estan makes his own perfume. The cleaner said when she entered Central there was a lingering scent. It remained the whole time there. Assuming that is Estan he has been there before she entered. Possibly a while before. 4002 exited much before 4001, and 4001 exited while the cleaner was in Central hall. And they did not describe seeing anyone else there. Therefore we can with much certainty assume Estan drove 4002 and Donovan drove 4001.
+</p>
+</div>
+
+
+<button type="button" class="collapsibleon1 onlinePuzzlesCollapsibles">EXCLUDING VEHICLES THAT COULD NOT HAVE EXITED WITH THE COFFEE</button>
+<div class="contenton1">
+  <p>
+Cleaner witnessed the cargo was in North hall, and that it was in there at 10:44.
+That excludes anything exiting before 10:45. Which leaves us with the following trucks:<br><br>
+<div class="row">
+  <div class="column" >
+    <h2>Exit Time</h2>
+    
+    <p>10.45pm</p>
+    <p>10.48pm:</p>
+    <p>10.48pm</p>
+    <p>10.54pm:</p>
+    <p>10.55pm:</p>
+    <p>11.04pm</p>
+    <p>11.05pm</p>
+    <p>11.08pm:</p>
+    <p>11.08pm</p>
+    <p>11.09pm:</p>
+  </div>
+  <div class="column">
+    <h2>Vehicle Number</h2>
+    
+    <p>2004</p>
+    <p>5001</p>
+    <p>3004</p>
+    <p>1002</p>
+    <p>1003</p>
+    <p>4001</p>
+    <p>2001</p>
+    <p>3001</p>
+    <p>2003</p>
+    <p>3002</p>
+  
+  </div>
+  <div class="column">
+   <h2>Cargo Weight</h2>
+    
+    <p>4030kgs</p>
+    <p>2004kgs</p>
+    <p>850kgs</p>
+    <p>7884kgs</p>
+    <p>730kgs</p>
+    <p>1809kgs</p>
+    <p>1097kgs</p>
+    <p>700kgs</p>
+    <p>2004kgs</p>
+    <p>839kgs</p>
+    
+  </div>
+</div>
+
+
+<br>
+
+
+
+</div>
+
+
+
+
+<button type="button" class="collapsibleon1 onlinePuzzlesCollapsibles">WEIGHT EXCLUSIONS</button>
+<div class="contenton1">
+  <p>
+The coffee itself weighs one metric ton (1000 kilos) which Florence Bellamy informs you in the video. That excludes: 3004, 1003, 3001 and 3002. Leaving us this:<br><br>
+
+<div class="row">
+  <div class="column" >
+    <h2>Exit Time</h2>
+    
+    <p>10.45pm</p>
+    <p>10.48pm:</p>
+    <p>10.54pm:</p>
+    <p>11.04pm</p>
+    <p>11.05pm</p>
+    <p>11.08pm</p>
+  </div>
+  <div class="column">
+    <h2>Vehicle Number</h2>
+    
+    <p>2004</p>
+    <p>5001</p>
+    <p>1002</p>
+    <p>4001</p>
+    <p>2001</p>
+    <p>2003</p>
+  
+  </div>
+  <div class="column">
+   <h2>Cargo Weight</h2>
+    
+    <p>4030kgs</p>
+    <p>2004kgs</p>
+    <p>7884kgs</p>
+    <p>1809kgs</p>
+    <p>1097kgs</p>
+    <p>2004kgs</p>
+    
+  </div>
+</div>
+
+
+<br>
+
+
+
+</div>
+
+
+
+<button type="button" class="collapsibleon1 onlinePuzzlesCollapsibles">FINAL STEP</button>
+<div class="contenton1">
+  <p>
+Cargos cannot be moved between halls it is stated on the cleaners statement. The coffee crate was seen in North hall, meaning it had to have been stolen from North hall. North hall only has bays that can accommodate trucks with compatibility with Charlie and Bravos.  That excludes the lone Vaulen truck: 5001. 2004 was loaded and exited by Jeffries in South hall, so that excludes that truck. Leaving us:<br><br>
+
+<div class="row">
+  <div class="column" >
+    <h2>Exit Time</h2>
+    
+    
+    <p>10.54pm:</p>
+    <p>11.04pm</p>
+    <p>11.05pm</p>
+    <p>11.08pm</p>
+  </div>
+  <div class="column">
+    <h2>Vehicle Number</h2>
+    
+    
+    <p>1002</p>
+    <p>4001</p>
+    <p>2001</p>
+    <p>2003</p>
+  
+  </div>
+  <div class="column">
+   <h2>Cargo Weight</h2>
+    
+    
+    <p>7884kgs</p>
+    <p>1809kgs</p>
+    <p>1097kgs</p>
+    <p>2004kgs</p>
+    
+  </div>
+</div>
+<br><br>Stig was heard yodeling in East hall, which is the only hall that can handle NLDs. That excludes Stig. It might be that he drove 1002 or 1003, but either is out of the picture.<br>
+The cleaner witnessed Tyrone and Barbara load their truck, so that excludes 2001 and 2003. Leaving only:<br>
+11.04pm:        4001        1809kgs, which was driven, from what we know from earlier, by Donovan Bell. Donovan Bell loaded and stole the coffee from North hall.<br><br>
+4001 is a SLYFLY, which is compatible only with Bravo and Delta bays. There is no Delta bay in North hall, but there is a Bravo bay.<br><br>
+Referencing the unique name of the bay on the floor plan. You’ll see that bay’s name is:  NO-BRAVO.<br><br>
+So the three answers are: Donovan, 4001 and NO-BRAVO.
+
+</div>
+
+
+<script>
+var coll = document.getElementsByClassName("collapsibleon1");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("activeon1");
+    var contenton1 = this.nextElementSibling;
+    if (contenton1.style.display === "block") {
+      contenton1.style.display = "none";
+    } else {
+      contenton1.style.display = "block";
+    }
+  });
+}
+</script>
+
+
+
+</div>
+
+
+
+
+
+
+
+<div id="secondOnlinePuzzle">
+<h2>THE SECOND ONLINE PUZZLE</h2>
+<p>THE EMOJI MESSAGE</p>
+<p>By “Converting” the emojis to regular text you will find simple descriptions for location, time and price. The answers for each is below. </p>
+
+<button type="button" class="collapsible onlinePuzzlesCollapsibles">THE PRICE</button>
+<div class="content">
+  <p>
+The new price is (standard amount of wishes a genie gives) 3 x 9 (the phrase the whole nine yards) x 3112 x 2 (snake eyes on a pair of dice are two.) The price is therefore: 168048.</p>
+</div>
+<button type="button" class="collapsible onlinePuzzlesCollapsibles">THE LOCATION</button>
+<div class="content">
+  <p>Statue of liberty indicates New York, taking a ferry to man + a hat + &amp; means Manhattan. Get on a (subway) to (East Broadway) station. Walk into (Chinatown = paifang emoji)  directly (WEST) until you reach a (park).That park, looking at a map is Columbus Park.</p>
+</div>
+<button type="button" class="collapsible onlinePuzzlesCollapsibles">THE TIME</button>
+<div class="content">
+  <p>24 - (eight ball is 8) - (high noon is 12) + (a baker’s 12 is, 12 being a dozen, a baker’s dozen is 13) - 0.30mins = 16:30 or 4:30pm.</p>
+</div><br>
+<button type="button" class="collapsible onlinePuzzlesCollapsibles">THE FULL SOLUTION</button>
+<div class="content">
+  <p>168048, Columbus Park and 4:30PM.</p>
+</div>
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+</div>
        
+
+<div id="thirdOnlinePuzzle">
+<h2>THE FINAL PUZZLE</h2>
+
+<button type="button" class="collapsibleon3 onlinePuzzlesCollapsibles">HINTS AND SOLUTIONS FOR THE FINAL PUZZLE</button>
+<div class="contenton3">
+  <p>
+  Florence Bellamy urges you to try and get into her brothers' emails, which she informs you is on their shared portal. She also hints that some of them may even hide their password in plain sight, and if that doesn’t help, it might help to get into the source code. 
+
+www.bullsandbatteries.com<br>
+
+On the site there are three different portals for logging into the three different brothers’ emails.<br> <br>
+
+<h3>GETTING INTO THE VARIOUS EMAIL PORTALS</h3>
+
+TOBIAS<br>
+
+There are two methods to crack Tobias’s password. <br><br>
+
+METHOD ONE<br><br>
+If you try any old password on Tobias’s field, a password hint will come up. <br>
+
+The hint contains “Feist.  Feist Feist.  Feist Feist Feist.  Feist Feist Feist Feist.“ That’s “Feist“ spelled 1 time, then 2 times, then 3 times, then 4 times. Feist 1 2 3 4. For those who do not remember Feist’s breakthrough hit, it is indeed named 1234. The password is 1234.<br><br> 
+
+METHOD TWO<br><br>
+However, there’s also an other clue to get into Tobias’s email. There are four separate images of energy bottles. On the single one, the Viking kind, if you zoom in, it reads “The password is black, red, yellow and green.“ Looking at the images, the energy drinks are either predominately black, red, yellow or green. There are 1 of the black kind, 2 of the red kind, 3 of the yellow kind and 4 of the green kind. The password is 1234. <br><br>
+
+
+FELDER<br><br>
+Felder’s password has one way of getting the password, but it is hinted in two different spots. <br><br>
+
+HINT ONE<br><br>
+If you try any password on Felder’s login, it will prompt you a password hint as well. This hint is:”You already forgot your password, future me. Hehe. Younger me, placed it in the corner”.<br><br>
+
+By searching the corners of the site, by dragging and dropping over invisible text you will find a spot on the top right corner that has text the same colour as the backdrop and is only revealed by marking it.<br><br>
+
+It reads: Hey dude, incase you forget your password it is password.<br><br>
+
+The password to get into Felder’s login is: password<br><br>
+HINT TWO<br>
+<br>If you have entered and read Tobias’s email already, there is an email thread between Tobias and Felder. Where Felder has emailed Tobias and written the following: I haven't received a single request, and not even a spam message since we started sharing portal. I know Sander keeps getting orders, so I wonder if he's changed some setting that makes everything go to him except for local communication.
+<br><br>
+Have you received any emails?
+<br><br>
+PS: To be honest, I tried to get into your email to see if you were doing it, but it doesn't look like you hide your login in white text like I do, so solid security bro!
+<br><br>
+ The important part is in the bottom. Felder hints that he hides his own password in white text. Indeed he does, up close to the title of the website. The password is: password
+<br><br>
+
+
+SANDER<br><br>
+Sander’s password is the hardest one to get, because, big surprise Sander did it. Sander as you may have figured out already is an anagram of Andres. Or I should say Andres is an anagram of Sander. Anyways, there are two methods to get into Sander’s email as well.<br><br><br>
+
+METHOD ONE<br><br>
+(This method is easier if you are using the browsers Chrome or Firefox, as opposed to Safari.)
+Both Florence and Tobias talk about getting into the source to see if Sander has hid his password in the code. Tobias mentions specifically to look for “sander-password“. On Chrome by going to VIEWS in the tool bar, then DEVELOPER followed BY VIEW SOURCE, you will see the source code of the website BullsandBatteries.com.<br><br>
+
+Then by choosing EDIT and Find. You can search for specific text in the source code. One should search for “sander-password”. By doing so you’ll see Sander has left himself the password information hidden in the code. It is tigerman.<br><br>
+
+METHOD TWO<br><br>
+You can find Sander’s password by looking around for anything hidden on the site, just like Felder. Which, if you get access to Tobias’s email, he’ll hint you at just that. In the bottom left corner, there is a little area where you’re mouse pointer will change icon if you hover over it. By pressing down the mouse at that area, you can erase a foreground, much like scratch lottery tickets. Underneath, it simply says tigerman.<br>
+That is Sander’s password.<br><br>
+
+THE FINAL STEP<br><br>
+On Sander’s email, you have to navigate to his TRASH folder. In there is a message from a shady person saying he’ll buy the coffee Sander is selling. And for him to send it to his place in Easthampton.<br><br>
+Easthampton is the final answer. Inputting that to Florence gets you to the final video.<br><br>
+CONGRATULATIONS!
+
+
+  </p>
+</div>
+
+
+<script>
+var coll = document.getElementsByClassName("collapsibleon3");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("activeon3");
+    var contenton3 = this.nextElementSibling;
+    if (contenton3.style.display === "block") {
+      contenton3.style.display = "none";
+    } else {
+      contenton3.style.display = "block";
+    }
+  });
+}
+</script>
+
+</div>
+
+
+
+<!--END-->
+</div>
+
 </body>
 
 </html>

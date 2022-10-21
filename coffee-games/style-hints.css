@@ -1,0 +1,195 @@
+/*HINTS STYLESHEET*/
+
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+
+
+html {}
+
+body {
+          
+          
+        } 
+
+/*
+* {box-sizing: border-box;}*/
+
+
+iframe {border-radius: 1%;}
+
+
+h1 {}
+hr {}
+h2 {}
+h3 {}
+
+p {
+font-size: 22px;
+text-align: left;
+font-family: proxima-nova,sans-serif;
+font-weight: 100;
+font-style: normal;
+letter-spacing: 0.015em;
+line-height: 1.5em;
+}
+
+.coffees {width: 40vw; float: left; margin-left: 5vw;}
+
+#onlinePuzzles {width: 80vw; float: left;margin-left: 5vw;}
+
+.onlinePuzzlesCollapsibles {
+  background-color: rgba(255,255,255,0.0);
+  color: white;
+  cursor: pointer;
+  margin: 6px;
+  padding: 18px;
+  width: 90%;
+  border: solid;
+  text-align: left;
+  outline: none;
+  font-size: 15px;}
+
+.sharedAttributes {
+  background-color: rgba(255,255,255,0.0);
+  color: white;
+  cursor: pointer;
+  margin: 6px;
+  padding: 18px;
+  width: 90%;
+  border: solid;
+  text-align: left;
+  outline: none;
+  font-size: 15px;}
+
+
+/*COFFEE CUP ONE*/
+.collapsible1 {}
+
+.active1, .collapsible1:hover {
+  background-color: rgba(255,0,255,0.5);
+}
+
+
+
+/*COFFEE CUP TWO*/
+
+.active2, .collapsible2:hover {
+    background-color: rgba(255,0,255,0.5);
+}
+
+
+
+
+/*COFFEE CUP THREE*/
+
+.active3, .collapsible3:hover {
+    background-color: rgba(255,0,255,0.5);
+}
+
+
+/*COFFEE CUP FOUR*/
+
+
+.active4, .collapsible4:hover {
+    background-color: rgba(255,0,255,0.5);
+}
+
+
+
+.sharedContent {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: rgba(255,0,255,0.0);
+}
+
+
+/*META*/
+.collapsiblemeta {
+}
+
+.activemeta, .collapsiblemeta:hover {
+      background-color: rgba(255,0,255,0.5);
+
+}
+
+.contentmeta {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+    background-color: rgba(255,0,255,0.0);
+}
+
+
+.collapsibleon1 {
+ 
+
+}
+
+.activeon1, .collapsibleon1:hover {
+background-color: rgba(255,0,255,0.5);}
+
+.contenton1 {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+background-color: rgba(255,0,255,0.0);}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+.collapsible {
+
+}
+
+.active, .collapsible:hover {
+  background-color: rgba(255,0,255,0.5);
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: rgba(255,0,255,0.0);
+}
+
+
+.collapsibleon3 {
+
+}
+
+.activeon3, .collapsibleon3:hover {
+      background-color: rgba(255,0,255,0.5);
+
+}
+
+.contenton3 {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+    background-color: rgba(255,0,255,0.0);
+}
