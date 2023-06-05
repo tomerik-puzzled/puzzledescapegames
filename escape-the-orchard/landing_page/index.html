@@ -33,33 +33,48 @@
 
         <div class="insidePhone">  
             <h3 style="margin-top: 0px;">-A Virtual Escape Game Demo-</h3>                         
-            <p>
+            <p id="theText">
             The game below is a small sample of what we can provide for your company. 
             Ideally, a customer would scan a sticker on your beer or cider and they would be brought to a site much like this with a video that begins the story.  
-        </p>
-        <p>
+        <br>
             Everything could be customized, from the story, setting, difficulty and themes so that it would be applicable to your brand and marketing.
-        </p>
-        <p>
+        <br>
         Click on the video to begin your demo.
         </p>
 
+
+
+
         <video id="videowindow" class="videoStyling" controls="" style="">
-            <source src="assets/missionIntro.mp4" type="video/mp4" onended="showGameButton()">
+            <source src="assets/missionIntro.mp4" type="video/mp4">
 
             Your browser does not support the video tag.
 
         </video>
 
+
+        
         </div>
 
         <button id="gameButton" onclick="window.location.href='https://seekbeak.com/v/vPq49onv1Aw'">Play The Demo</button>
                                 
         <script>
-            function showGameButton() {
-                document.getElementById("gameButton").style.display = "block";  
-                document.getElementById('gameButton').style.display ='block';              
-            }
+           
+
+
+$("#videowindow").on('ended', function(){
+  this.webkitExitFullscreen();
+});
+document.getElementById("videowindow").onended = function() {myFunction()};
+function myFunction() {
+  
+  document.getElementById("gameButton").style.opacity = "1.0";
+  document.getElementById("theText").style.opacity ="0.0";
+}
+
+
+
+</script>
 
         </script>
 

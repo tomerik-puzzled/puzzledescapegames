@@ -97,27 +97,34 @@ body {
   a:hover {text-decoration:none;}   
   a:active {text-decoration:none;}
   
+
+
+
+
+
   
   
   
   #gameButton {
-    background-color: rgba(134,12,15,0.4); /* Green */
-    border: solid 2px red;
+    background-color: rgba(0, 0, 0, 0.809); /* Green */
+    border: double 1vw rgb(255, 255, 255);
     color: white;
-    padding: 1px 1px;
+    padding: 1vw 1vw;
     text-align: center;
     text-decoration: none;
-    display: none;
+  
     position: absolute;
-    left: 40vw;
+    left: 30vw;
     top: 50vh;
-    font-size: 16px;
-    border-radius: 2px;
+    font-size: 3vw;
+    border-radius: 0.2vw;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     transition-duration: 0.4s;
-    width: 20vw;
+    width: 40vw;
+    height: 20vw;
    
     z-index: 100;
+    opacity: 1;
   }
   
 
@@ -146,6 +153,7 @@ body {
  
 .videoStyling {
   max-width: 90%; border: double 10px white; border-radius: 1%;
+  z-index: -1;
 }
 
 
