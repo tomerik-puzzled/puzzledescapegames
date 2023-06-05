@@ -1,5 +1,9 @@
+
+
+
+
 body {
-    background-image: url(assets/orchard.png);
+    background-image: url(assets/background-horizontal.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -21,25 +25,11 @@ body {
     font-variant-caps: small-caps;
      
           margin: 0;
+          color: white;
   }
   
   
   
-  #header {
-          background-image: url(assets/title.png);
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: 90% auto;
-          background-color: rgba(0,0,0,0.0); 
-          border: solid rgb(0, 255, 42) 0px;
-          height: 20vh;
-          width: 100vw;
-          justify-content: center;
-          text-align: center;
-          align-items: center;
-          align-content: center;
-          vertical-align: center;
-  }
   
   
 
@@ -54,16 +44,24 @@ body {
   {
           
             
-         
+         position: fixed;
           background-color: rgba(0, 0, 0, 0.783);
           border: solid rgb(255, 255, 255) 2px;
-          height: 10vh;
+          height: 6vh;
           width: 100vw;
           bottom: 0px;
           
   }
   
-  .textBox {width: auto; margin: 4px; padding: 10px; border-top: solid 2px white; border-bottom: solid 2px white; background-color: rgba(0, 0, 0, 0.6);}
+  .insidePhone {
+    position: absolute; 
+    
+  }
+
+  h2 {
+    font-family: Helvetica;
+    font
+  }
   
   
   /*actual text*/
@@ -109,7 +107,7 @@ body {
     padding: 1px 1px;
     text-align: center;
     text-decoration: none;
-    display: block;
+    display: none;
     position: absolute;
     left: 40vw;
     top: 50vh;
@@ -136,22 +134,65 @@ body {
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
         transition-duration: 0.4s;
         width: 30vw;
-       
+       margin: 4px;
         z-index: 100;
       }
   
   button:hover {
-    background-color: rgba(134,12,15,0.7); 
-    color: white;
+    background-color: rgba(240, 237, 237, 0.7); 
+    color: rgb(202, 4, 4);
   }
   
+ 
+.videoStyling {
+  max-width: 90%; border: double 10px white; border-radius: 1%;
+}
+
+
+
+  @media only screen and (orientation: portrait) {
   
-  iframe {
-    padding: 0px;
-    width: center.width;
-    height: 69vh;
-    border: dashed white 0px;
+body {
+  background-image: url(assets/background-vertical.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100vw auto;}
+
+.insidePhone {
+  width: 61vw; 
+  height: calc(61vw * (1000/658));
+  margin-left: 17vw;
+  top: 37vw; 
+  padding: 1vw; 
+}
+
+  }  
+
+
+  /*MOBILE*/
+@media only screen and (max-width: 770px)     {
+ 
+  
+                              }
+
+@media only screen and (max-width: 770px) and (orientation: landscape) {
+  
+
+}            
+
+  
+
+
+/*LARGE  SCREEN*/
+@media only screen and (min-width: 771px) {
+
+  .insidePhone {
+   width: 80vw;
+   height: 90vw;
+   top: 2vw;
+   left: 3vw;
   }
-  
+}
+
 
 

@@ -31,48 +31,37 @@
 <body>
     
 
+        <div class="insidePhone">  
+            <h3 style="margin-top: 0px;">-A Virtual Escape Game Demo-</h3>                         
+            <p>
+            The game below is a small sample of what we can provide for your company. 
+            Ideally, a customer would scan a sticker on your beer or cider and they would be brought to a site much like this with a video that begins the story.  
+        </p>
+        <p>
+            Everything could be customized, from the story, setting, difficulty and themes so that it would be applicable to your brand and marketing.
+        </p>
+        <p>
+        Click on the video to begin your demo.
+        </p>
 
-        <div id="header">
-<p>A virtual Escape Game</p>
+        <video id="videowindow" class="videoStyling" controls="" style="">
+            <source src="assets/missionIntro.mp4" type="video/mp4" onended="showGameButton()">
+
+            Your browser does not support the video tag.
+
+        </video>
+
         </div>
-        <!--Top Ends-->
 
-        
-           
-                        
-
-
-                            <div class="textBox" >                           
-                             <p>
-                                The game below is a small sample of what we can provide for your company. 
-                                Ideally, a customer would scan a sticker on your beer or cider and they would be brought to a site much like this with a video that begins the story.  
-                            </p>
-                            <p>
-                                Everything could be customized, from the story, setting, difficulty and themes so that it would be applicable to your brand and marketing.
-                            </p>
-                            <p><!--
-                                If you need a hint or a nudge during the game, 
-                                check out the hint website here:
-                                <p><a href="https://www.puzzledescapegames.com/hints-professor" target="blank_">HINTS IF YOU NEED THEM</a></p>
-                            -->
-                            Click on the video to begin your demo.
-                            </p>
-
-                            
-                        </div>
-
-                          
+        <button id="gameButton" onclick="window.location.href='https://seekbeak.com/v/vPq49onv1Aw'">Play The Demo</button>
                                 
-                                    <video id="videowindow" class="" controls="" style="max-width: 90%; border: solid 2px white; border-radius: 1%;">
-                                        <source src="assets/missionIntro.MOV" type="video/mp4" onended="showGameButton()">
-      
-                                        Your browser does not support the video tag.
-                                    
-                                    </video>
-                                  
-                                    <button id="gameButton" onclick="window.location.href='https://seekbeak.com/v/vPq49onv1Aw'">Play The Demo</button>
-                                
-                    
+        <script>
+            function showGameButton() {
+                document.getElementById("gameButton").style.display = "block";  
+                document.getElementById('gameButton').style.display ='block';              
+            }
+
+        </script>
 
 
 
