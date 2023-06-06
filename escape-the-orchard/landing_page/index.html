@@ -25,39 +25,114 @@
     <script src="/assets/main.js"></script>
     <script src="assets/main.js"></script>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     
 </head>
 
 <body>
+
+    <div class="topnav">
+        <a href="#home" class="active">&nbsp;</a>
+        <div id="myLinks">
+          
+         <button id="theGameButton" class="mobButton" onclick="openTheGame(); toggleMobileMenu();">The Demo Game</button>
+         <button id="learnMoreButton" class="mobButton" onclick="openLearnMore(); toggleMobileMenu();">Learn More</button>
+         <button id="hintsButton" class="mobButton" onclick="openHints(); toggleMobileMenu()">Hints</button>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
+          <i class="fa fa-bars"></i>
+        </a>
+  </div>
+  
+  <script>
+  function toggleMobileMenu() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+
+  function openLearnMore() {
+    document.getElementById('theGameID').style.display = 'none';
+    document.getElementById('learnMoreID').style.display = 'block';
+    document.getElementById('hintsID').style.display = 'none';
+    }
+
+
+function openHints() {
+    document.getElementById('theGameID').style.display = 'none';
+    document.getElementById('learnMoreID').style.display = 'none';   
+    document.getElementById('hintsID').style.display = 'block';
+    }
+
+function openTheGame() {
+document.getElementById('theGameID').style.display = 'block';
+document.getElementById('learnMoreID').style.display = 'none';   
+document.getElementById('hintsID').style.display = 'none';
+}
+
+  </script>
+
+
     
 
-        <div class="insidePhone">  
+        <div id="theGameID" class="insidePhone">  
             <h3 style="margin-top: 0px;">-A Virtual Escape Game Demo-</h3>                         
             <p id="theText">
             The game below is a small sample of what we can provide for your company. 
-            Ideally, a customer would scan a sticker on your beer or cider and they would be brought to a site much like this with a video that begins the story.  
-        <br>
-            Everything could be customized, from the story, setting, difficulty and themes so that it would be applicable to your brand and marketing.
-        <br>
-        Click on the video to begin your demo.
-        </p>
+            Imagine a customer scans a code on your cider, and then the game begins. A little video immerses them in a setting, story and puzzles that matches and builds on your brand. 
+            <br>
+            Sounds cool? Click on the video for a little demo.
+            </p>
 
-
-
-
-        <video id="videowindow" class="videoStyling" controls="" style="">
+            <video id="videowindow" class="videoStyling" controls="" style="">
             <source src="assets/missionIntro.mp4" type="video/mp4">
-
             Your browser does not support the video tag.
+            </video>
 
-        </video>
+            <button id="gameButton" onclick="window.location.href='https://seekbeak.com/v/vPq49onv1Aw'">Play The Demo</button>
 
-
-        
         </div>
 
-        <button id="gameButton" onclick="window.location.href='https://seekbeak.com/v/vPq49onv1Aw'">Play The Demo</button>
-                                
+     
+        <!--LEARN MORE-->
+        <div hidden id="learnMoreID" class="insidePhone">  
+            <h3 style="margin-top: 0px;">-YOUR BRAND IS ENTERTAINMENT-</h3>                         
+            <p id="" style="text-align: left;">
+            A fully customized game not only acts as entertainment and a freebie for your customer, it allows for opportunities in branding, marketing and costumer collection. A game can feature the founders as characters, and the game setting can highlight the quality of your products, the puzzles can showcase your commitment to making the best product. On a marketing level, you can test campaigns within the game at a low cost. Lastly, you can enable the player to provide geodata, email information and other customer data to further their access within the game.   
+            <br>
+            -customer data
+            <br>
+            -brand building
+            <br>
+            -marketing testing
+            </p>            
+        </div>
+        
+        <!--HINTS-->
+        <div hidden id="hintsID" class="insidePhone">  
+            <h3 style="margin-top: 0px;">-HINTS-</h3>                         
+            <p id="" style="text-align: left;">
+            On the info board there are two clues. 
+            <br>
+            First of all, there are a bunch of photos of different men with the first name Johnny.
+            <br>
+            There are also different frequencies for radio stations. One of them has been recently added with a different color pen. On the radio, go to that frequency.
+            <br>
+            The radio plays a set of riddles. Two of the riddles, the answers are apple and for the other two the answer is seed. Combine apple and seed and you have Appleseed.
+            <br>
+            On the field monitor fill in the tricksters first and last name, and voila! 
+        </p>            
+        </div>
+
+
+
+
+
+
         <script>
            
 
@@ -70,6 +145,7 @@ function myFunction() {
   
   document.getElementById("gameButton").style.opacity = "1.0";
   document.getElementById("theText").style.opacity ="0.0";
+  document.getElementById("videowindow").style.display ="none";
 }
 
 
@@ -82,10 +158,11 @@ function myFunction() {
 
 
 
-    <!--BOTTOM BEGINS Ends-->
+    <!--BOTTOM BEGINS 
         <div id="footer" style="">
            <button>Learn More</button><button>Hints</button>
         </div>
+        Ends-->
 </body>
 
 </html>
