@@ -137,7 +137,7 @@ color: rgb(202, 4, 4);
     padding: 1vw 1vw;
     text-align: center;
     text-decoration: none;
-  display: block;
+    display: none;
     position: absolute;
     left: 12vw;
     top: 30vw;

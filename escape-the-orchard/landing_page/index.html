@@ -87,14 +87,17 @@ document.getElementById('hintsID').style.display = 'none';
             <br>
             Sounds cool? Click on the video for a little demo.
             </p>
-
+            
             <video id="videowindow" class="videoStyling" controls="" style="">
             <source src="assets/missionIntro.mp4" type="video/mp4">
             Your browser does not support the video tag.
             </video>
 
             <button id="gameButton" onclick="window.location.href='https://seekbeak.com/v/e0jDWya7zr9'">Play The Demo</button>
+
+            
         </div>
+
 
      
         <!--LEARN MORE-->
@@ -141,7 +144,7 @@ $("#videowindow").on('ended', function(){
 });
 document.getElementById("videowindow").onended = function() {myFunction()};
 function myFunction() {
-  
+  document.getElementById("gameButton").style.display = "block";
   document.getElementById("gameButton").style.opacity = "1.0";
   document.getElementById("theText").style.opacity ="0.0";
   document.getElementById("videowindow").style.display ="none";
